@@ -1,0 +1,18 @@
+env: "gymma_indep_rwd"
+
+t_max: 11000000
+schedule_interval: 5000000000
+env_args:
+  - key: "robotic_warehouse:rware-ijcai25-goalshift-v6"
+    time_limit: 100
+    pretrained_wrapper: null
+    inner_args:
+      reward_share_wgt: 1.0
+
+test_greedy: True
+test_nepisode: 100
+test_interval: 50000
+log_interval: 50000
+replay_interval: null   # 100000   # currently, this overrides the save_replay in default.yaml
+runner_log_interval: 50000
+learner_log_interval: 50000

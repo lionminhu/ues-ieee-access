@@ -1,0 +1,47 @@
+{
+    "exp_note": "pretrain performance",
+    "tasks": {
+        "pretrain": {
+            "min_updates": 0,
+            "max_updates": 10100000,
+            "interval": 50000,
+            "xaxis_bound": [0, 10000000],
+            "x_label": "Steps",
+            "y_label": "Success Rate (%)",
+            "y_metric": "test_success_mean",
+            "legend_loc": "lower right",
+            "order": ["IPPO", "IPPO+M(R)", "IPPO+M(UES)", "IPPO+M(UES+R)"],
+            "colors": ["yellow", "green", "blue", "red"],
+            "run_ids": {
+                "IPPO": [
+                    "run1id",
+                    "run2id",
+                    "run3id",
+                    "run4id",
+                    "run5id"
+                ],
+                "IPPO+M(R)": [
+                    "run1id",
+                    "run2id",
+                    "run3id",
+                    "run4id",
+                    "run5id"
+                ],
+                "IPPO+M(UES)": [
+                    "run1id",
+                    "run2id",
+                    "run3id",
+                    "run4id",
+                    "run5id"
+                ],
+                "IPPO+M(UES+R)": [
+                    "run1id",
+                    "run2id",
+                    "run3id",
+                    "run4id",
+                    "run5id"
+                ]
+            }
+        }
+    }
+}

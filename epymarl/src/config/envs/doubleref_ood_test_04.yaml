@@ -1,0 +1,17 @@
+env: "doubleref"
+
+t_max: 11000000
+schedule_interval: 5000000000
+
+env_args:
+  - time_limit: 100
+    ood_mode: "test"
+    ood_k: 0.4
+
+test_greedy: True
+test_nepisode: 100
+test_interval: 50000
+log_interval: 50000
+replay_interval: null   # 100000   # currently, this overrides the save_replay in default.yaml
+runner_log_interval: 50000
+learner_log_interval: 50000
